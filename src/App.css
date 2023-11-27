@@ -15,13 +15,19 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+header h1 {
+  margin:0;
+}
+.react-icon {
+  max-width: 70px;
+  align-self: center;
 }
 
 .App-link {
