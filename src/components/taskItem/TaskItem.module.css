@@ -10,10 +10,11 @@
     height: 150px;
     padding: 1em;
     gap: 20%;
-    margin: 5px;
+    margin-top: 25px;
 
     text-align: left;
     border-radius: 10px;
+    
     border: 2px double #0e1013;
 }
 
