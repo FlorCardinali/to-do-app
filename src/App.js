@@ -1,8 +1,7 @@
 import logo from './logo.svg';
 import React from 'react';
 import './App.css';
-// import {TaskList} from "../src/imports"
-import TaskList from './components/taskList/TaskList';
+import {TaskList,TaskForm} from "../src/imports"
 
 function App() {
   return (
@@ -11,9 +10,16 @@ function App() {
         <h1>To Do List App</h1>
         <img  src={logo} className="react-icon"></img>
       </header>
-      <main>
-        <TaskList/> 
-      </main>
+      <div className='container'>
+        <aside>
+          <TaskForm/>
+        </aside>
+        
+        <main>
+          <TaskList/> 
+        </main>
+      </div>
+      
     </div>
   );
 }

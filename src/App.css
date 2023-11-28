@@ -14,7 +14,6 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  /* font-size: calc(10px + 2vmin); */
   color: white;
 }
 header h1 {
@@ -32,4 +31,20 @@ h1 {
 
 body{
   background-color: #3b3b4f;
+}
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+}
+main, aside{ 
+  margin: 15px 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+main{
+  width: 65%;
+}
+aside {
+  width: 35%;
 }
