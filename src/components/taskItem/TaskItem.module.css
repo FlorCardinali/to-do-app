@@ -1,0 +1,92 @@
+/* generals */
+.do, .notDo {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    overflow: hidden;
+
+    width: 60vw;
+    min-width: 40vw;
+    height: 150px;
+    padding: 1em;
+    margin: 5px;
+
+    text-align: left;
+    border-radius: 10px;
+    border: 2px double #0e1013;
+}
+
+/* botones */
+span {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+
+.checkButton, .deleteButton, .normalButton {
+    border: 2px double #0e1013;
+    border-radius: 10px;
+    width: 80px;
+    height: 30px;
+    color: #f5f6f7;
+    margin: 5px;
+}
+
+.normalButton{
+    background-color:#0e1013;
+}
+.normalButton:hover{
+    background-color:  #3a3c3f;
+}
+.deleteButton{
+    background-color:#c0392b ; 
+}
+.deleteButton:hover {
+    background-color: #E74C3C; 
+}
+.checkButton{
+    background-color:#2ecc71 ;
+}
+.checkButton:hover {
+    background-color:#49eb8d ; 
+}
+
+
+.taskText {
+    display: flex;
+    flex-grow: 3;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1em;
+    padding: 0%;
+}
+.taskText * {
+    margin: 0;
+    padding: 0; 
+    
+}
+span {
+    flex-grow: 1;
+}
+
+.notDo {
+    background-color: #282c34;
+    color: #f5f6f7;
+}
+.do {
+    background-color: #41b883;
+}
+@media (max-width: 800px) {
+    .taskText p {
+        display: none;
+    }
+    .taskText h2 {
+        margin: auto;
+        width: 80%;
+    }
+    span {
+        justify-content: center;
+    }
+}
+
